@@ -15,6 +15,7 @@ const Customers = () => {
   return (
     <>
       <BackHomeLink></BackHomeLink>
+      <div>Customers</div>
       <div>{customersView}</div>
     </>
   );

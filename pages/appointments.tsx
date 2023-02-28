@@ -14,6 +14,7 @@ const Appointments = () => {
   return (
     <>
       <BackHomeLink></BackHomeLink>
+      <div>Appointments</div>
       <div>{appointmentsView}</div>
     </>
   );

@@ -13,6 +13,7 @@ const Applications = () => {
   return (
     <>
       <BackHomeLink></BackHomeLink>
+      <div>Applications</div>
       <div>{applicationsView}</div>
     </>
   );

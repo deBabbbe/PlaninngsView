@@ -16,6 +16,7 @@ const Employees = () => {
   return (
     <>
       <BackHomeLink></BackHomeLink>
+      <div>Employees</div>
       <div>{employeesView}</div>
     </>
   );
