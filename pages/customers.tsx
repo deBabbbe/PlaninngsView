@@ -1,4 +1,4 @@
-import Link from "next/link";
+import BackHomeLink from "../components/BackHomeLink";
 import customers from "../data/customers";
 
 const Customers = () => {
@@ -12,9 +12,7 @@ const Customers = () => {
 
   return (
     <>
-      <div>
-        <Link href="/">Home</Link>
-      </div>
+      <BackHomeLink></BackHomeLink>
       <div>{customersView}</div>
     </>
   );

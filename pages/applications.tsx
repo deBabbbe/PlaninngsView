@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BackHomeLink from "../components/BackHomeLink";
 import applications from "../data/applications";
 
 const Applications = () => {
@@ -10,9 +11,7 @@ const Applications = () => {
 
   return (
     <>
-      <div>
-        <Link href="/">Home</Link>
-      </div>
+      <BackHomeLink></BackHomeLink>
       <div>{applicationsView}</div>
     </>
   );

@@ -1,6 +1,6 @@
 import applications, { IApplication } from "./applications";
 
-interface IEmployee {
+export interface IEmployee {
   id: number;
   name: string;
   applications: IApplication[];
@@ -9,13 +9,13 @@ interface IEmployee {
 
 const employees: IEmployee[] = [
   {
-    id: 1,
+    id: 0,
     name: "Maria Hill",
     applications: [applications[0]],
     workTime: "8 - 12",
   },
   {
-    id: 2,
+    id: 1,
     name: "Schorsch Mayer",
     applications: [...applications],
     workTime: "13 - 18",

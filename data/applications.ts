@@ -7,25 +7,25 @@ export interface IApplication {
 
 const applications: IApplication[] = [
   {
-    id: 1,
+    id: 0,
     name: "Nageln",
     duration: "30 min",
     price: 20,
   },
   {
-    id: 2,
+    id: 1,
     name: "Wimpern",
     duration: "30 min",
     price: 30,
   },
   {
-    id: 3,
+    id: 2,
     name: "Füße",
     duration: "60 min",
     price: 40,
   },
   {
-    id: 4,
+    id: 3,
     name: "Nanoblading",
     duration: "90 min",
     price: 250,
