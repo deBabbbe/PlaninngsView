@@ -4,7 +4,8 @@ import customers from "../data/customers";
 const Customers = () => {
   const customersView = customers.map((customer) => (
     <div key={customer.id}>
-      {customer.name} - {customer.address} - {customer.comment}
+      {customer.name} - {customer.comment} - {customer.address.street}{" "}
+      {customer.address.zip} {customer.address.city} {customer.address.country}
     </div>
   ));
 
