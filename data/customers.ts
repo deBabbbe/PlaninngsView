@@ -10,6 +10,8 @@ interface ICustomer {
   name: string;
   comment: string;
   address: IAddress;
+  telefon: string;
+  email: string;
 }
 
 const customers: ICustomer[] = [
@@ -23,6 +25,8 @@ const customers: ICustomer[] = [
       street: "Berlinerstraße 1",
       zip: 67433,
     },
+    telefon: "06321234345435",
+    email: "m.mueller@gmail.com",
   },
   {
     id: 2,
@@ -34,6 +38,8 @@ const customers: ICustomer[] = [
       street: "Brechlochweg 15",
       zip: 67466,
     },
+    telefon: "06325453245",
+    email: "m.mustermann@gmx.com",
   },
 ];
 
