@@ -1,12 +1,13 @@
-import Link from "next/link";
 import BackHomeLink from "../components/BackHomeLink";
 import applications from "../data/applications";
 
 const Applications = () => {
   const applicationsView = applications.map((application) => (
-    <div key={application.id}>
-      {application.name} - {application.duration} - {application.price} €
-    </div>
+    <ul key={application.id}>
+      <li>
+        {application.name} - {application.duration} - {application.price} €
+      </li>
+    </ul>
   ));
 
   return (

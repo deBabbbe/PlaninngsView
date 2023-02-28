@@ -3,10 +3,12 @@ import appointments from "../data/appointments";
 
 const Appointments = () => {
   const appointmentsView = appointments.map((appointments) => (
-    <div key={appointments.id}>
-      {appointments.customer.name} - {appointments.date.toString()} -{" "}
-      {appointments.employee.name}{" "}
-    </div>
+    <ul key={appointments.id}>
+      <li>
+        {appointments.customer.name} - {appointments.date.toString()} -{" "}
+        {appointments.employee.name}{" "}
+      </li>
+    </ul>
   ));
 
   return (

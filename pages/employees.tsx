@@ -3,12 +3,14 @@ import employees from "../data/employees";
 
 const Employees = () => {
   const employeesView = employees.map((employee) => (
-    <div key={employee.id}>
-      {employee.name} - {employee.workTime} o`clock -{" "}
-      {employee.applications.map((a) => (
-        <span key={a.id}>{a.name}, </span>
-      ))}
-    </div>
+    <ul key={employee.id}>
+      <li>
+        {employee.name} - {employee.workTime} o`clock -{" "}
+        {employee.applications.map((a) => (
+          <span key={a.id}>{a.name}, </span>
+        ))}
+      </li>
+    </ul>
   ));
 
   return (
