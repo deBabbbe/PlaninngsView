@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const BackHomeLink = () => (
-  <div>
+  <div id="BackHomeLink">
     <Link href="/">Home</Link>
   </div>
 );

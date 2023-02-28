@@ -14,3 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#BackHomeLink {
+  background-color: grey;
+  margin: 12px 0 12px 0;
+  padding: 12px 0 12px 0;
+}
