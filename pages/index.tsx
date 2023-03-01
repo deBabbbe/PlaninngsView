@@ -6,6 +6,8 @@ import styles from "../styles/Home.module.css";
 const Home: NextPage = () => {
   const router = useRouter();
   return (
+    <>
+    <h1 id="header">Plannings</h1>
     <div className={styles.container}>
       <main className={styles.main}>
         <Link href="/customers">Customers</Link>
@@ -14,6 +16,7 @@ const Home: NextPage = () => {
         <Link href="/appointments">Appointments</Link>
       </main>
     </div>
+    </>
   );
 };
 
