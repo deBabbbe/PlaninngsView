@@ -2,21 +2,26 @@ import BackHomeLink from "../components/BackHomeLink";
 import employees from "../data/employees";
 
 const Employees = () => {
+  const headerView = ["Name", "Work time", "Application"].map((entry) => (
+    // eslint-disable-next-line react/jsx-key
+    <th>{entry}</th>
+  ));
+
   const employeesView = employees.map((employee) => (
-    <ul key={employee.id}>
-      <li>
-        {employee.name} - {employee.workTime} o`clock -{" "}
-        {employee.applications.map((a) => (
-          <span key={a.id}>{a.name}, </span>
-        ))}
-      </li>
-    </ul>
+    <tr key={employee.id}>
+      <td>{employee.name}</td>
+      <td>{employee.workTime} o`clock</td>
+      <td>{employee.applications.map((a) => a.name)}</td>
+    </tr>
   ));
 
   return (
     <>
       <BackHomeLink></BackHomeLink>
-      <div>{employeesView}</div>
+      <table>
+        <tr>{headerView}</tr>
+        {employeesView}
+      </table>
     </>
   );
 };

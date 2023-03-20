@@ -2,18 +2,26 @@ import BackHomeLink from "../components/BackHomeLink";
 import applications from "../data/applications";
 
 const Applications = () => {
+  const headerView = ["Name", "Duration", "Price"].map((entry) => (
+    // eslint-disable-next-line react/jsx-key
+    <th>{entry}</th>
+  ));
+
   const applicationsView = applications.map((application) => (
-    <ul key={application.id}>
-      <li>
-        {application.name} - {application.duration} - {application.price} €
-      </li>
-    </ul>
+    <tr key={application.id}>
+      <td>{application.name}</td>
+      <td>{application.duration}</td>
+      <td>{application.price}</td>
+    </tr>
   ));
 
   return (
     <>
       <BackHomeLink></BackHomeLink>
-      <div>{applicationsView}</div>
+      <table>
+        <tr>{headerView}</tr>
+        {applicationsView}
+      </table>
     </>
   );
 };
