@@ -2,21 +2,30 @@ import Link from "next/link";
 
 const Menu = () => {
   return (
-    <table>
-      <ul>
-        <tr>
+    <table id="menu">
+      <tr>
+        <th>Areas</th>
+      </tr>
+      <tr>
+        <td>
           <Link href="../customers">Customers</Link>
-        </tr>
-        <tr>
+        </td>
+      </tr>
+      <tr>
+        <td>
           <Link href="../applications">Applications</Link>
-        </tr>
-        <tr>
+        </td>
+      </tr>
+      <tr>
+        <td>
           <Link href="../employees">Employees</Link>
-        </tr>
-        <tr>
+        </td>
+      </tr>
+      <tr>
+        <td>
           <Link href="../appointments">Appointments</Link>
-        </tr>
-      </ul>
+        </td>
+      </tr>
     </table>
   );
 };
